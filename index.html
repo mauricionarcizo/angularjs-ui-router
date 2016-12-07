@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script src="angular.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        .active {
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+    <base href="/">
+</head>
+
+<body ng-app="myApp">
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+    <ui-view></ui-view>
+</body>
+
+</html>
